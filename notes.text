@@ -1,0 +1,25 @@
+ title: String,
+    desc:String,
+    price: Number,
+    image: String,
+    longitude:Number,
+    latitude:Number,
+    postedBy: {
+        type: ObjectId,
+        ref: "User",
+      }
+}, {
+    timestamps: true
+
+
+
+
+      fullname: String,
+  email: String,
+  password: String,
+  pic: {
+    type: String,
+    default: "https://images.unsplash.com/photo-1604077350837-c7f82f28653f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  expoToken: String,
+})
